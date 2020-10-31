@@ -1,0 +1,32 @@
+
+.ant-layout-header.set_padding_header {
+  padding: 0;
+  .logo{
+    width: 40px;
+  }
+  .set_padding_header_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 4;
+    font-size: 20px;
+  }
+  .icon_user{
+    font-size: 20px;
+  }
+  .set_drawer {
+    .ant-drawer-title.set_title_drawer {
+      text-align: center !important;
+    }
+  }
+  .site-drawer-render-in-current-wrapper {
+    position: relative;
+    height: 200px;
+    padding: 48px;
+    overflow: hidden;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #ebedf0;
+    border-radius: 2px;
+  }
+}
