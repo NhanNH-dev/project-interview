@@ -10,7 +10,7 @@ const CardUSer = ({ id, title, comments, deletes, getDetail }) => {
   const showComments = () =>
     comments.map((c, i) => <Comments key={i} comments={c} />);
 
-  const author = comments && comments.length >0 && comments[0].email.slice(comments[0].email.indexOf("@") + 1);
+  const author = comments && comments.length >0 && comments[0].email.slice(0, comments[0].email.search("@"));
   return (
     <Card
       headStyle={{ textAlign: "center" }}
